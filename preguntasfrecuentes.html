@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/imagenes/natural fit (1).png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Natural-Fit</title>
-    
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="../imagenesdw/naturalfitlogo.png" type="image/x-icon">
+        <title>Natural Fit</title>
+    </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
+        <img class="logo" src="imagenes/natural fit (1).png" alt="logo">
+        <nav class="navbar">
+            <ul class="menu">
                 <li class="menu__item">
                     <a href="index.html">INICIO</a>
                 </li>
@@ -30,40 +30,80 @@
                 </li>
             </ul>
         </nav>
+
     </header>
 
-    <MAin>
-        <section><h2>DESDE DONDE SALEN LOS PEDIDOS?</h2>
-            <p>Nuestros pedidos saalen desde la ciudad de 
-                rafaela/Santa Fe y se distribuyen por todo el pais 
-                a traves de correo argentino!</p>
-            <h2>CUANTO TARDAN EN LLEGAR LOS
-                PRODUCTOS?</h2>
-            <p>Nuestroas productos una vez confirmada la compra se despachan en
-                 el siguiente dia habil y viajan por correo argentino hacia su destino en menos de 5 dias!</p>
-            <h2>DONDE FABRICAN LOS PRODUCTOS?</h2>
-            <p>Olympic es una marca nacional cituada en villa allende/cordoba, y se traen de forma
-                 directa para nuestra ciudad de rafaela.</p>
-            <h2>QUE PASA SI EL PRODUCTO LLEGA EN MAL ESTADO?</h2>
-            <p>En cualquier situacion en donde tengas que presentar alguna queja o critica nos manejamos de forma directa
-                 con nuestra atencion al cliente enviando un mail a matifrund@gmail.com </p>
+    <main>
+        <section>
+            <h1>
+                PREGUNTA FRECUENTES:
+            </h1>
+            <div>
+                <h2 class="subtitulo__preguntas">
+                    DE DONDE SALEN LOS PEDIDOS?
+                </h2>
+                <p class="texto__preguntas">
+                    Nuestros pedidos salen de rafaela, santa fe y se distribuyen por todo el pais a traves de correo argentino.
+                </p>
+            </div>
+            <div>
+                <h2 class="subtitulo__preguntas">
+                    CUANTO TARDAN EN LLEGAR LOS PRODUCTOS?
+                </h2>
+                <P class="texto__preguntas">
+                    Nuestros productos una vez confirmada la compra, se despachan en el siguiente dia habil y luego correo argentino los entresga en un aproximado de 5-7 dias.
+                </P>
+            </div>
+            <div>
+                <H2 class="subtitulo__preguntas">
+                    DONDE FABRICAN LOS PRODUCTOS?
+                </H2>
+                <P class="texto__preguntas">
+                    Olympic es una empresa nacional cituada en villa allende/cordoba y se trasladan sirectamente para rafaela.
+                </P>
+            </div>
+            <div>
+                <h2 class="subtitulo__preguntas">
+                    QUE PASA SI EL PRODUCTO LLEGA EN MAL ESTADO?
+                </h2>
+                <p class="texto__preguntas">
+                    En cualquier caso en donde tengas que presentar algun tipo de reclamo-critica o disconformidad con el estado del producto, comunicate con nuestra atencion al cliente por via e-mail a matifrund@gmail.com
+                </p>
+            </div>
+            <div>
+                <img class="imagen__preguntas" src="imagenes/imagenpreguntafrecuentes.jpg" alt="preguntas frecuentes">
+            </div>
+            
         </section>
 
-        <img src="../imagenesdw/imagenfondogympreguntasfrecuentes.jpg" alt="fondo gimnasio">
-        
-    </MAin>
-
+        <div class="icono__whatsapp">
+            <a href="https://wa.me/3492581454">
+                <img class="whatsapp__imagen" src="https://img.icons8.com/3d-fluency/100/000000/whatsapp.png"/>
+            </a>
+        </div>
+    </main>
+    
     <footer>
-        <h1>metodos de pago</h1>
-        <img src="/imagenes/imagenmetodosdepago.png" alt="metodos de pago">
-        <h2>contactanos</h2>
-        <p>
-            <ul>
-                <li>3492 - 581454</li>
-                <li>chiarella 137</li>
-                <li>matifrund@gmail.com</li>
-            </ul>
-        </p>
+        <div class="seccion__pagos">
+            <p class="pagos__titulo">
+                <strong>METODOS DE PAGO</strong>
+            </p>
+            <img class="pagos__imagen" src="imagenes/imagenmetodosdepago.png" alt="metodos de pago">
+        </div>
+
+        <div class="seccion__contactanos">
+            <p class="contactanos__titulo">
+                <strong>CONTACTANOS</strong>
+                <ul class="contactanos__list">
+                    <li class="contactanos__texto">3492-581454</li>
+                    <li class="contactanos__texto">matifrund@gmail.com</li>
+                    <li class="contactanos__texto">chiarella137</li>
+                </ul>
+            </p>
+        </div>
     </footer>
+
+    <p class="piedepagina">Todos los derechos reservados - Matias Frund</p>
+
 </body>
 </html>
