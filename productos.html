@@ -4,35 +4,34 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="../imagenesdw/naturalfitlogo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos/style.css">
+        <link rel="shortcut icon" href="imagenes/natural fit (1).png" type="image/x-icon">
         <title>Natural Fit</title>
     </head>
 <body>
     <header>
-        <img class="logo" src="imagenes/natural fit (1).png" alt="logo">
-        <nav class="navbar">
-            <ul class="menu">
-                <li class="menu__item">
-                    <a href="index.html">INICIO</a>
-                </li>
-                <li class="menu__item active">
-                    <a href="productos.html">PRODUCTOS</a>
-                </li>
-                <li class="menu__item">
-                    <a href="nosotros.html">NOSOTROS</a>
-                </li>
-                <li class="menu__item">
-                    <a href="preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
-                </li>
-                <li class="menu__item">
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-
+        <nav class="navbar navbar-expand-lg navbar-dark backround__nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="logo" src="imagenes/natural fit (1).png" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="index.html">INICIO</a>
+                  <a class="nav-link active" aria-current="page" href="productos.html">PRODUCTOS</a>
+                  <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                  <a class="nav-link" href="preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
+                  <a class="nav-link" href="contacto.html">CONTACTO</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
-
+    
 
     <main>
         <section class="productos">
@@ -47,7 +46,7 @@
             </div>
 
             <div class="imagen1__productos">
-                <img class="imagen1" src="imagenes/cajabarritasproteicas.png" alt="caja proteica">
+                <img class="imagen" src="imagenes/cajabarritasproteicas.png" alt="caja proteica">
                     
                 <button class="boton__productos">
                     <a href="https://www.instagram.com/olympic_natural/" target="_blank" >COMPRAR</a>
@@ -56,7 +55,7 @@
             </div>
 
             <div class="imagen2__productos">
-                <img class="imagen2" src="imagenes/barrita chocolate png.png" alt="barritas energeticas">
+                <img class="imagen" src="imagenes/barrita chocolate png.png" alt="barritas energeticas">
                     
                 <button class="boton__productos">
                     <a href="https://www.instagram.com/olympic_natural/" target="_blank" >COMPRAR</a>
@@ -65,7 +64,7 @@
             </div>
 
             <div class="imagen3__productos">
-                <img class="imagen3" src="imagenes/barrita chocolate prot png.png" alt="barritas proteicas">
+                <img class="imagen" src="imagenes/barrita chocolate prot png.png" alt="barritas proteicas">
                     
                 <button class="boton__productos">
                     <a href="https://www.instagram.com/olympic_natural/" target="_blank" >COMPRAR</a>
@@ -73,7 +72,7 @@
             </div>
 
             <div class="imagen4__productos">
-                <img class="imagen4" src="imagenes/imagengranola.jpeg" alt="granola energetica">
+                <img class="imagen" src="imagenes/imagengranola.jpeg" alt="granola energetica">
             
                 <button class="boton__productos">
                     <a href="https://www.instagram.com/olympic_natural/" target="_blank" >COMPRAR</a>
@@ -82,7 +81,7 @@
             </div>
 
             <div class="imagen5__productos">
-                <img class="imagen5" src="imagenes/imagengranolaproteica.jpeg" alt="">
+                <img class="imagen" src="imagenes/imagengranolaproteica.jpeg" alt="">
                 <button class="boton__productos">
                     <a href="https://www.instagram.com/olympic_natural/" target="_blank" >COMPRAR</a>   
                 </button>
@@ -99,26 +98,40 @@
     </main>
     
     <footer>
-        <div class="seccion__pagos">
-            <p class="pagos__titulo">
-                <strong>METODOS DE PAGO</strong>
-            </p>
-            <img class="pagos__imagen" src="imagenes/imagenmetodosdepago.png" alt="metodos de pago">
-        </div>
+        <section class="seccion__footer">
+            <div class="seccion__pagos">
+                <p class="pagos__titulo">
+                    <strong>METODOS DE PAGO</strong>
+                </p>
+                <img class="pagos__imagen" src="imagenes/imagenmetodosdepago.png" alt="metodos de pago">
+            </div>
+    
+            <div class="seccion__contactanos">
+                <p class="contactanos__titulo">
+                    <strong>CONTACTANOS</strong>
+                    <ul class="contactanos__list">
+                        <li class="contactanos__texto">3492-581454</li>
+                        <li class="contactanos__texto">matifrund@gmail.com</li>
+                        <li class="contactanos__texto">chiarella137</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
 
-        <div class="seccion__contactanos">
-            <p class="contactanos__titulo">
-                <strong>CONTACTANOS</strong>
-                <ul class="contactanos__list">
-                    <li class="contactanos__texto">3492-581454</li>
-                    <li class="contactanos__texto">matifrund@gmail.com</li>
-                    <li class="contactanos__texto">chiarella137</li>
-                </ul>
-            </p>
+        <div class="icono__whatsapp">
+            <a href="https://wa.me/3492581454">
+                <img class="whatsapp__imagen" src="https://img.icons8.com/3d-fluency/100/000000/whatsapp.png"/>
+            </a>
         </div>
+        
     </footer>
 
+
     <p class="piedepagina">Todos los derechos reservados - Matias Frund</p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
 </body>
 </html>

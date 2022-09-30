@@ -6,9 +6,6 @@
     box-sizing: border-box;
  
 }
-
-
-
 .icono__whatsapp{
     position:fixed;
     right: 0;
@@ -20,48 +17,22 @@
     width: 70px;
 }
 
-
 body{
     background-color: rgb(204, 149, 68);
+
 }
 
 
 /*HEADER*/
 
+.backround__nav{
+    background-color:rgb(28, 10, 0) ;
+}
+
 .logo{
     width: 100px;
 }
 
-header{
-    width: 100%;
-    background-color: rgb(28, 10, 0);
-    display: flex;
-    
-}
-
-.navbar{
-    display: flex;
-    align-items: center;
-}
-
-.menu{
-    display:flex;
-    list-style-type: none;
-    gap: 80px;
-    margin-left: 150px;
-    
-   
-}
-
-.menu__item a{
-    color: rgb(255, 216, 169);
-    text-decoration: none;
-}
-
-.menu__item.active a,
-.menu__item a:hover {
-    text-decoration: underline double;
-}
 
 /*FOOTER*/
 
@@ -69,11 +40,11 @@ header{
     width: 200px ;
 }
 
-footer{
+.seccion__footer{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     background-color:  rgb(28, 10, 0) ;
-    width: auto;
     align-items: center;
 }
 
@@ -104,9 +75,6 @@ footer{
 
 /*INICIO*/
 
-main{
-    width: 100%;
-}
 
 .inicio{
     display: grid;
@@ -136,6 +104,13 @@ main{
     border: 1.5px solid rgb(28, 10, 0) ;
     display: flex;
     margin-left: 115px;
+    margin-top: 15px;
+    transition: all .2s;
+}
+
+.boton__inicio:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .boton__inicio a{
@@ -154,19 +129,27 @@ main{
 }
 
 .imagen2__inicio{
-    width: 1440px;
-    margin: 25px;
-    border-radius: 8px;
+    width: 96%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 5px;
     border: 3px solid rgb(28, 10, 0) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .titulo__inicio{
     text-align: center;
+    font-size: 45px;
 }
 
 .texto__inicio{
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 10px;
+
 }
 
 
@@ -186,8 +169,6 @@ main{
 .imagen__productos{
     grid-area: imagen__productos;
 }
-
-
 
 .imagen1__productos{
     grid-area: imagen1__productos;
@@ -216,41 +197,15 @@ main{
 
 .imagen{
     width: 75%;
-    border-radius: 8px;
-    border: 3px solid rgb(28, 10, 0) ;
+    transition: all .3s;
+}
+
+.imagen:hover{
+    transform: scale(1.1) translateY(-40px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 
-.imagen1{
-    width: 75%;
-    border-radius: 8px;
-    border: 3px solid rgb(28, 10, 0) ;
-}
-
-.imagen2{
-    width: 75%;
-    border-radius: 8px;
-    border: 3px solid rgb(28, 10, 0) ;
-}
-
-.imagen3{
-    width: 75%;
-    border-radius: 8px;
-    border: 3px solid rgb(28, 10, 0) ;
-}
-
-.imagen4{
-    width: 75%;
-    border-radius: 8px;
-    border: 3px solid rgb(28, 10, 0) ;
-    
-}
-
-.imagen5{
-    width: 75%;
-    border-radius: 8px;
-    border: 3px solid rgb(28, 10, 0) ;
-}
 
 .boton__productos{
     background-color:rgb(204, 149, 68) ;
@@ -259,8 +214,11 @@ main{
     margin-top: 20px;
     margin-left: 115px;
     text-decoration: none;
+    transition: all .3s;
+}
 
-
+.boton__productos:hover{
+    transform: scale(1.1);
 }
 
 
@@ -273,12 +231,13 @@ main{
 
 .titulo__nosotros{
     margin-top: 50px;
+    margin-bottom: 25px;
     text-align: center;
     font-size: 30px;
 
 }
 .texto__nosotros{
-    margin-bottom: 100px;
+    margin-bottom: 25px;
     margin-left: 80px;
     margin-right: 80px;
     text-align: center;
@@ -286,34 +245,35 @@ main{
 }
 
 .texto__nosotros1{
-    margin-bottom: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
-    text-align: center;
-    font-size: 20px;
-}
-
-.texto__nosotros2{
     margin-bottom: 100px;
     margin-left: 80px;
     margin-right: 80px;
     text-align: center;
     font-size: 20px;
+
 }
+
 
 /*PREGUNTA FRECUENTES*/
 
+.titulo__preguntas{
+    margin: 10px;
+    font-size: 30px;
+}
+
 .subtitulo__preguntas{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     margin-top: 20px;
 }
 
 .texto__preguntas{
+    font-size: 18px;
     margin-left: 500px;
     margin-right: 500px;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align:center;
 }
 
 .imagen__preguntas{
@@ -328,25 +288,91 @@ main{
 .imagen__contacto{
     width: 95%;
     height: auto;
-    margin: 20px;
+    margin: 30px;
     border-radius: 8px;
-    border: 3px solid rgb(28, 10, 0) ;
-    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
 
 .titulo__contacto{
     text-align: center;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .comunicate__contacto{
     display: flex;
-    margin: 100px 100px 150px 100px;
+    margin-top: 50px;
+    margin-bottom: 60px;
     justify-content: space-around;
 }
 
 .iconos__contacto{
     width: 50px;
+    transition: all .3s;
+}
+
+.iconos__contacto:hover{
+    transform: scale(1.2);
 }
 
 
+/*MEDIA QUERE*/
+
+@media screen and (max-width: 1300px) {
+
+    .subtitulo__preguntas{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .texto__preguntas{
+        font-size: 18px;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .imagen__preguntas{
+        width: 92%;
+        border-radius: 3px;
+        border: 1.5px solid rgb(28, 10, 0) ;
+    }
+
+    .titulo__preguntas{
+        margin: 30px;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+    .subtitulo__preguntas{
+        font-size: 22px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .texto__preguntas{
+        font-size: 18px;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        text-align:center;
+    }
+
+    .imagen__preguntas{
+        width: 92%;
+        margin: 50px;
+        border-radius: 3px;
+        border: 1.5px solid rgb(28, 10, 0) ;
+    }
+
+    .titulo__preguntas{
+        margin: 30px;
+        font-size: 20px;
+    }
+
+    
+}
