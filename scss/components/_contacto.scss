@@ -1,0 +1,40 @@
+.contacto{
+    .titulo__contacto{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .comunicate__contacto{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        justify-content: space-around;
+        .iconos__contacto{
+            width: 50px;
+            transition: all .3s;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .imagen__contacto{
+        width: 95%;
+        height: auto;
+        margin: 30px;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+}
+
+
+    .imagen__contacto{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+    

@@ -1,0 +1,104 @@
+.inicio{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+    .seccion__descripcion{
+        width: 40%;
+        margin-top: 75px;
+        .titulo__inicio{
+            text-align: center;
+            font-size: 45px;
+        }
+        .texto__inicio{
+            text-align: center;
+            font-size: 25px;
+            margin: 10px;
+        }
+    }
+    .seccion__imagen{
+        margin-top: 75px;
+        margin-right: 10px;
+        .imagen__inicio{
+            width: 325px;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid rgb(28, 10, 0) ;
+        }
+        .boton__inicio{
+            background-color: rgb(204, 149, 68);
+            border: 1.5px solid rgb(28, 10, 0) ;
+            display: flex;
+            margin-left: 115px;
+            margin-top: 15px;
+            transition: all .2s;
+            .letraboton__inicio{
+                color: rgb(28, 10, 0);
+            }
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            }
+        }
+        
+
+    }
+}
+
+.seccion__imagen2{
+    width: 90%;
+    margin: 0 auto;
+    .imagen2__inicio{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+        border: 3px solid rgb(28, 10, 0) ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .inicio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        .seccion__descripcion {
+            width: 90%;
+            .titulo__inicio{
+                font-size: 35px;
+            }
+            .texto__inicio{
+                font-size: 25px;
+            }
+
+        }
+        .seccion__imagen{
+            margin-top: 50px;
+            margin-right: 0px;
+            .imagen__inicio{
+                width: 280px;
+                border-radius: 5px;
+            }
+            .boton__inicio{
+                margin-left: 85px;
+                margin-top: 15px;
+                margin-bottom: 50px;
+                transition: all .2s;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 600px){
+    .seccion__imagen2{
+        display: none;
+    }
+    
+}

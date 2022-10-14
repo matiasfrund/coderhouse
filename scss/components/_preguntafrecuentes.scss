@@ -1,0 +1,33 @@
+.imagen__preguntas{
+    width: 92%;
+    margin: 50px;
+    border-radius: 8px;
+    border: 3px solid rgb(28, 10, 0) ;
+}
+@media screen and (max-width: 1300px) {
+
+    .imagen__preguntas{
+        width: 90%;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .imagen__preguntas{
+        width: 90%;
+        margin: 40px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .imagen__preguntas{
+        width: 90%;
+        margin: 20px;
+    }
+}
